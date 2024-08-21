@@ -1,11 +1,19 @@
-public class JP3{  
-    float salary=40000;  
-   }  
-   class Programmer extends JP3{  
-    int bonus=10000;  
-    public static void main(String args[]){  
-      Programmer p=new Programmer();  
-      System.out.println("Programmer salary is:"+p.salary);  
-      System.out.println("Bonus of Programmer is:"+p.bonus);  
-   }  
-   }  
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.eat();  
+        myDog.bark(); 
+    }
+}
